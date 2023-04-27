@@ -22,8 +22,8 @@ export class GifsService {
 
   get tagsHistory() {
     return [...this._tagsHistory];
-  }
 
+  }
   private saveLocalStorage(): void {
     localStorage.setItem('history', JSON.stringify(this._tagsHistory))
   }
